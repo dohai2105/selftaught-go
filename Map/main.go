@@ -15,4 +15,12 @@ func main() {
 
 	delete(colors2, 10)
 	fmt.Println(colors2)
+
+	printMap(colors)
+}
+
+func printMap(c map[string]string) {
+	for color, hex := range c {
+		fmt.Println("Hex code for", color, "is", hex)
+	}
 }
